@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electric Eye — Pyramids Tech</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Progress Bar -->
+<div id="progress-bar" style="width: 0%"></div>
+
+<!-- Navigation Dots -->
+<nav class="nav-dots" id="navDots"></nav>
+
+<!-- ==================== SLIDE 1: HERO ==================== -->
+<section class="min-h-screen flex flex-col items-center justify-center relative overflow-hidden" data-slide="0">
+    <div class="grid-pattern absolute inset-0 z-0"></div>
+    <div class="hero-glow z-0"></div>
+    <span class="slide-number">01 / 11</span>
+
+    <div class="relative z-10 text-center px-6 max-w-5xl">
+        <div class="reveal reveal-delay-1 mb-6">
+            <span class="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-brand-blue/20 bg-brand-blue/5 text-brand-cyan text-sm font-medium">
+                <i data-lucide="zap" class="w-4 h-4"></i>
+                Pyramids Tech
+            </span>
+        </div>
+
+        <h1 class="reveal reveal-delay-2 font-sora text-6xl md:text-8xl lg:text-9xl font-bold tracking-tight mb-2">
+            <span class="shimmer-text">Electric</span>
+        </h1>
+        <h1 class="reveal reveal-delay-3 font-sora text-6xl md:text-8xl lg:text-9xl font-bold tracking-tight mb-8 text-white">
+            Eye
+        </h1>
+
+        <p class="reveal reveal-delay-4 text-xl md:text-2xl text-text-secondary font-light leading-relaxed max-w-2xl mx-auto mb-12">
+            راقب استهلاكك الكهربائي في الوقت الفعلي<br>
+            <span class="text-brand-cyan">وعرّف كل جهاز بقدره الحقيقي</span>
+        </p>
+
+        <div class="reveal reveal-delay-5 flex items-center justify-center gap-4 flex-wrap">
+            <a href="#problem" class="group inline-flex items-center gap-2 px-8 py-4 bg-brand-blue text-white font-bold text-sm uppercase tracking-wide rounded-xl hover:-translate-y-1 transition-all duration-300" style="box-shadow: 0 0 30px rgba(0,145,255,0.3)">
+                اكتشف المشكلة
+                <i data-lucide="arrow-down" class="w-4 h-4 group-hover:translate-y-1 transition-transform"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Floating icons -->
+    <div class="absolute bottom-32 right-20 float opacity-20 hidden lg:block">
+        <i data-lucide="cpu" class="w-16 h-16 text-brand-blue"></i>
+    </div>
+    <div class="absolute top-40 left-20 float-delay opacity-15 hidden lg:block">
+        <i data-lucide="wifi" class="w-12 h-12 text-brand-cyan"></i>
+    </div>
+    <div class="absolute bottom-48 left-40 float opacity-10 hidden lg:block">
+        <i data-lucide="smartphone" class="w-10 h-10 text-brand-gold"></i>
+    </div>
+</section>
+
+<!-- ==================== SLIDE 2: TEAM ==================== -->
+<section class="min-h-screen flex items-center justify-center relative px-6 py-24" data-slide="1">
+    <span class="slide-number">02 / 11</span>
+    <div class="max-w-5xl w-full">
+        <div class="reveal mb-16 text-center">
+            <span class="text-brand-blue text-sm font-semibold uppercase tracking-widest">فريق العمل</span>
+            <h2 class="font-sora text-4xl md:text-6xl font-bold mt-3">Team Members</h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+            <div class="reveal reveal-delay-1 card-hover bg-card rounded-2xl p-6 text-center group">
+                <div class="w-16 h-16 rounded-full bg-brand-blue/10 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-500">
+                    <i data-lucide="user" class="w-7 h-7 text-brand-blue"></i>
+                </div>
+                <h3 class="font-bold text-white text-lg">mostafa ibrahim</h3>
+                <p class="text-text-dim text-sm mt-1">عضو فريق</p>
+            </div>
+            <div class="reveal reveal-delay-2 card-hover bg-card rounded-2xl p-6 text-center group">
+                <div class="w-16 h-16 rounded-full bg-brand-cyan/10 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-500">
+                    <i data-lucide="user" class="w-7 h-7 text-brand-cyan"></i>
+                </div>
+                <h3 class="font-bold text-white text-lg">Alaa Abdelmaged</h3>
+                <p class="text-text-dim text-sm mt-1">عضو فريق</p>
+            </div>
+            <div class="reveal reveal-delay-3 card-hover bg-card rounded-2xl p-6 text-center group">
+                <div class="w-16 h-16 rounded-full bg-brand-gold/10 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-500">
+                    <i data-lucide="user" class="w-7 h-7 text-brand-gold"></i>
+                </div>
+                <h3 class="font-bold text-white text-lg">Nour Elhuda</h3>
+                <p class="text-text-dim text-sm mt-1">عضو فريق</p>
+            </div>
+            <div class="reveal reveal-delay-4 card-hover bg-card rounded-2xl p-6 text-center group">
+                <div class="w-16 h-16 rounded-full bg-brand-blue/10 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-500">
+                    <i data-lucide="user" class="w-7 h-7 text-brand-blue"></i>
+                </div>
+                <h3 class="font-bold text-white text-lg">Adam Yasser</h3>
+                <p class="text-text-dim text-sm mt-1">عضو فريق</p>
+            </div>
+            <div id="team-member-highlight" class="reveal reveal-delay-5 card-hover bg-card rounded-2xl p-6 text-center group">
+                <div class="w-16 h-16 rounded-full bg-brand-cyan/10 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-500">
+                    <i data-lucide="user" class="w-7 h-7 text-brand-cyan"></i>
+                </div>
+                <h3 class="font-bold text-light text-lg">Ali Abdelhamid</h3>
+                <p class="text-text-dim text-sm mt-1">عضو فريق</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== VIDEO DEMO (INSERTED) ==================== -->
+<section class="min-h-screen flex items-center justify-center relative px-6 py-24" data-slide="2">
+    <span class="slide-number">03 / 12</span>
+
+        <div class="reveal reveal-delay-2 video-container">
+            <video class="responsive-video rounded-2xl shadow-lg" controls preload="metadata" playsinline>
+                <source src="./designarena_video_44d1l561.mp4" type="video/mp4">.
+            </video>
+        </div>
+    </div>
+</section>
+
+<div class="section-divider max-w-4xl mx-auto"></div>
+
+<!-- ==================== SLIDE 3: PROBLEM ==================== -->
+<section class="min-h-screen flex items-center justify-center relative px-6 py-24" data-slide="3" id="problem">
+    <span class="slide-number">04 / 12</span>
+    <div class="max-w-6xl w-full">
+        <div class="reveal mb-16 text-center">
+            <span class="text-red-400 text-sm font-semibold uppercase tracking-widest">المشكلة</span>
+            <h2 class="font-sora text-4xl md:text-6xl font-bold mt-3">Problem Statement</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="reveal reveal-delay-1 card-hover bg-card rounded-2xl p-8 relative overflow-hidden group">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-red-500/5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+                <div class="w-14 h-14 rounded-xl bg-red-500/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
+                    <i data-lucide="help-circle" class="w-7 h-7 text-red-400"></i>
+                </div>
+                <h3 class="font-bold text-white text-xl mb-3">جهل الاستهلاك الفردي</h3>
+                <p class="text-text-secondary leading-relaxed">عدم معرفة كمية الكهرباء التي يستهلكها كل جهاز على حدة، مما يصعب تحديد الأجهزة الأكثر استهلاكاً</p>
+            </div>
+
+            <div class="reveal reveal-delay-2 card-hover bg-card rounded-2xl p-8 relative overflow-hidden group">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-orange-500/5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+                <div class="w-14 h-14 rounded-xl bg-orange-500/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
+                    <i data-lucide="trending-up" class="w-7 h-7 text-orange-400"></i>
+                </div>
+                <h3 class="font-bold text-white text-xl mb-3">فواتير مرتفعة بلا مبرر</h3>
+                <p class="text-text-secondary leading-relaxed">ارتفاع مفاجئ في فواتير الكهرباء دون معرفة السبب الحقيقي وراء هذا الارتفاع</p>
+            </div>
+
+            <div class="reveal reveal-delay-3 card-hover bg-card rounded-2xl p-8 relative overflow-hidden group">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-yellow-500/5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+                <div class="w-14 h-14 rounded-xl bg-yellow-500/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
+                    <i data-lucide="eye-off" class="w-7 h-7 text-yellow-400"></i>
+                </div>
+                <h3 class="font-bold text-white text-xl mb-3">لا مراقبة فورية</h3>
+                <p class="text-text-secondary leading-relaxed">انعدام وجود نظام لمراقبة استهلاك الكهرباء المنزلية في الوقت الفعلي لحظة بلحظة</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== SLIDE 4: MARKETING STRATEGY ==================== -->
+<section class="min-h-screen flex items-center justify-center relative px-6 py-24" data-slide="4">
+    <span class="slide-number">05 / 12</span>
+    <div class="max-w-6xl w-full">
+        <div class="reveal mb-16 text-center">
+            <span class="text-brand-cyan text-sm font-semibold uppercase tracking-widest">استراتيجية التسويق</span>
+            <h2 class="font-sora text-4xl md:text-6xl font-bold mt-3">Marketing Strategy</h2>
+        </div>
+
+        <div class="slide">
+            <h1>📊 استراتيجية التسويق</h1>
+            <div class="subtitle">Electric Eye — من فضلك إلى دقة | من فاتورة إلى بصيرة</div>
+            <div class="card">
+                <h3>🎯 السوق المستهدف</h3>
+                <ul>
+                    <li>• الأسر المصرية (مسبقة الدفع)</li>
+                    <li>• المحلات والكافيهات</li>
+                    <li>• أصحاب العقارات المؤجرة</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>📢 استراتيجية الجذب</h3>
+                <ul>
+                    <li>• فيديوهات مقارنة على TikTok/YouTube</li>
+                    <li>• شراكات مع كهربائيين (عمولة 10%)</li>
+                    <li>• تركيب تجريبي في مجمعات سكنية</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>💎 الميزة التنافسية</h3>
+                <ul>
+                    <li>• دقة لكل جهاز على حدة</li>
+                    <li>• متوافق مع التعرفة المصرية</li>
+                    <li>• إنذار نفاد الرصيد</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>💰 نموذج الإيرادات</h3>
+                <table>
+                    <tr>
+                        <th>النموذج</th>
+                        <th>الإيرادات</th>
+                    </tr>
+                    <tr>
+                        <td>مرة واحدة</td>
+                        <td>هامش ربح الجهاز</td>
+                    </tr>
+                    <tr>
+                        <td>اشتراك سنوي</td>
+                        <td>دخل متكرر</td>
+                    </tr>
+                    <tr>
+                        <td>مؤسسات</td>
+                        <td>ترخيص شهري</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="card">
+                <h3>🚀 خطة الإطلاق (3 أشهر)</h3>
+                <div class="timeline">
+                    <div class="timeline-item">📅 شهر 1: فيديوهات + صفحة هبوط</div>
+                    <div class="timeline-item">🧪 شهر 2: 20 عميل تجريبي</div>
+                    <div class="timeline-item">🎉 شهر 3: خصم 30% + مسابقة</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>🏪 قنوات البيع</h3>
+                <ul>
+                    <li>• متجر إلكتروني + واتساب</li>
+                    <li>• فنيو الكهرباء (عمولة)</li>
+                    <li>• التكامل مع واتساب API</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</section>
+
+<div class="section-divider max-w-4xl mx-auto"></div>
+
+<!-- ==================== SLIDE 4: ADVANTAGES ==================== -->
+<section class="min-h-screen flex items-center justify-center relative px-6 py-24" data-slide="4">
+    <span class="slide-number">05 / 12</span>
+    <div class="max-w-6xl w-full">
+        <div class="reveal mb-16 text-center">
+            <span class="text-brand-cyan text-sm font-semibold uppercase tracking-widest">المميزات</span>
+            <h2 class="font-sora text-4xl md:text-6xl font-bold mt-3">Project Advantages</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="reveal reveal-delay-1 card-hover bg-card rounded-2xl p-8 flex gap-5 items-start group">
+                <div class="w-12 h-12 shrink-0 rounded-xl bg-brand-blue/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                    <i data-lucide="leaf" class="w-6 h-6 text-brand-blue"></i>
+                </div>
+                <div>
+                    <h3 class="font-bold text-white text-lg mb-2">تقليل الاستهلاك</h3>
+                    <p class="text-text-secondary text-sm leading-relaxed">تقليل استهلاك الكهرباء والترشيد في الاستخدام من خلال المعرفة الدقيقة</p>
+                </div>
+            </div>
+
+            <div class="reveal reveal-delay-2 card-hover bg-card rounded-2xl p-8 flex gap-5 items-start group">
+                <div class="w-12 h-12 shrink-0 rounded-xl bg-brand-cyan/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                    <i data-lucide="target" class="w-6 h-6 text-brand-cyan"></i>
+                </div>
+                <div>
+                    <h3 class="font-bold text-white text-lg mb-2">دقة القياس لكل جهاز</h3>
+                    <p class="text-text-secondary text-sm leading-relaxed">معرفة دقيقة لاستهلاك كل جهاز على حدة بشكل منفصل ومحدد</p>
+                </div>
+            </div>
+
+            <div class="reveal reveal-delay-3 card-hover bg-card rounded-2xl p-8 flex gap-5 items-start group">
+                <div class="w-12 h-12 shrink-0 rounded-xl bg-brand-gold/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                    <i data-lucide="activity" class="w-6 h-6 text-brand-gold"></i>
+                </div>
+                <div>
+                    <h3 class="font-bold text-white text-lg mb-2">مراقبة فورية</h3>
+                    <p class="text-text-secondary text-sm leading-relaxed">مراقبة الاستهلاك في الوقت الفعلي عبر تطبيق جوال مخصص</p>
+                </div>
+            </div>
+
+            <div class="reveal reveal-delay-4 card-hover bg-card rounded-2xl p-8 flex gap-5 items-start group">
+                <div class="w-12 h-12 shrink-0 rounded-xl bg-green-500/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                    <i data-lucide="home" class="w-6 h-6 text-green-400"></i>
+                </div>
+                <div>
+                    <h3 class="font-bold text-white text-lg mb-2">سهل الاستخدام</h3>
+                    <p class="text-text-secondary text-sm leading-relaxed">تصميم بسيط وسهل الاستخدام مناسب لجميع المنازل</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="section-divider max-w-4xl mx-auto"></div>
+
+<!-- ==================== SLIDE 5: CHALLENGES ==================== -->
+<section class="min-h-screen flex items-center justify-center relative px-6 py-24" data-slide="5">
+    <span class="slide-number">06 / 12</span>
+    <div class="max-w-5xl w-full">
+        <div class="reveal mb-16 text-center">
+            <span class="text-brand-gold text-sm font-semibold uppercase tracking-widest">التحديات والحلول</span>
+            <h2 class="font-sora text-4xl md:text-6xl font-bold mt-3">Challenges & Solutions</h2>
+        </div>
+
+        <div class="reveal reveal-delay-1 bg-card rounded-2xl border border-white/5 overflow-hidden">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th class="flex items-center gap-2">
+                            <i data-lucide="alert-triangle" class="w-4 h-4"></i>
+                            التحدي
+                        </th>
+                        <th class="flex items-center gap-2">
+                            <i data-lucide="check-circle" class="w-4 h-4"></i>
+                            الحل
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="font-medium text-white">دقة القياس</td>
+                        <td>استخدام حساسات تيار دقيقة مثل <span class="text-brand-cyan">ACS712</span> و <span class="text-brand-cyan">SCT-013</span></td>
+                    </tr>
+                    <tr>
+                        <td class="font-medium text-white">اتصال الإنترنت</td>
+                        <td>الاعتماد على اتصال WiFi مستقر ونقلي</td>
+                    </tr>
+                    <tr>
+                        <td class="font-medium text-white">أمن البيانات</td>
+                        <td>تطبيق التشفير وحماية البيانات عند النقل والتخزين</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<div class="section-divider max-w-4xl mx-auto"></div>
+
+<!-- ==================== SLIDE 6: COMPONENTS ==================== -->
+<section class="min-h-screen flex items-center justify-center relative px-6 py-24" data-slide="6">
+    <span class="slide-number">07 / 12</span>
+    <div class="max-w-6xl w-full">
+        <div class="reveal mb-16 text-center">
+            <span class="text-brand-blue text-sm font-semibold uppercase tracking-widest">المكونات</span>
+            <h2 class="font-sora text-4xl md:text-6xl font-bold mt-3">Components</h2>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <!-- Component Cards -->
+            <div class="reveal reveal-delay-1 card-hover bg-card rounded-2xl p-6 group">
+                <div class="flex items-center gap-4 mb-3">
+                    <div class="w-10 h-10 rounded-lg bg-brand-blue/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                        <i data-lucide="gauge" class="w-5 h-5 text-brand-blue"></i>
+                    </div>
+                    <h3 class="font-bold text-white">Current Sensor</h3>
+                </div>
+                <p class="text-text-secondary text-sm leading-relaxed">حساسات تيار دقيقة مثل <span class="text-brand-cyan">ACS712</span> و <span class="text-brand-cyan">SCT-013</span> لقياس استهلاك الكهرباء بدقة عالية</p>
+            </div>
+
+            <div class="reveal reveal-delay-2 card-hover bg-card rounded-2xl p-6 group">
+                <div class="flex items-center gap-4 mb-3">
+                    <div class="w-10 h-10 rounded-lg bg-brand-cyan/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                        <i data-lucide="cpu" class="w-5 h-5 text-brand-cyan"></i>
+                    </div>
+                    <h3 class="font-bold text-white">ESP32 Microcontroller</h3>
+                </div>
+                <p class="text-text-secondary text-sm leading-relaxed">معالج دقيق مزود بـ WiFi و Bluetooth مدمج لمعالجة البيانات ونقلها</p>
+            </div>
+
+            <div class="reveal reveal-delay-3 card-hover bg-card rounded-2xl p-6 group">
+                <div class="flex items-center gap-4 mb-3">
+                    <div class="w-10 h-10 rounded-lg bg-brand-gold/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                        <i data-lucide="wifi" class="w-5 h-5 text-brand-gold"></i>
+                    </div>
+                    <h3 class="font-bold text-white">WiFi Module</h3>
+                </div>
+                <p class="text-text-secondary text-sm leading-relaxed">مدمج داخل ESP32 لإرسال البيانات إلى السحابة في الوقت الفعلي</p>
+            </div>
+
+            <div class="reveal reveal-delay-4 card-hover bg-card rounded-2xl p-6 group">
+                <div class="flex items-center gap-4 mb-3">
+                    <div class="w-10 h-10 rounded-lg bg-green-500/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                        <i data-lucide="smartphone" class="w-5 h-5 text-green-400"></i>
+                    </div>
+                    <h3 class="font-bold text-white">Mobile Application</h3>
+                </div>
+                <p class="text-text-secondary text-sm leading-relaxed">تطبيق جوال يعرض الاستهلاك الفوري والرسوم البيانية ونسب الاستخدام</p>
+            </div>
+        </div>
+
+        <!-- External Integration -->
+        <div class="reveal reveal-delay-5 mt-8 card-hover bg-gradient-to-br from-brand-blue/5 to-brand-cyan/5 rounded-2xl p-8 border border-brand-blue/10">
+            <div class="flex items-center gap-3 mb-5">
+                <div class="w-10 h-10 rounded-lg bg-brand-blue/20 flex items-center justify-center notif-badge">
+                    <i data-lucide="plug" class="w-5 h-5 text-brand-blue"></i>
+                </div>
+                <h3 class="font-bold text-white text-lg">التكامل مع تطبيقات خارجية</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                <div class="flex items-start gap-2">
+                    <i data-lucide="check" class="w-4 h-4 text-brand-cyan mt-1 shrink-0"></i>
+                    <span class="text-text-secondary">مراقبة الاستهلاك في الوقت الفعلي عبر <span class="text-white font-medium">Firebase, Telegram, Blynk</span></span>
+                </div>
+                <div class="flex items-start gap-2">
+                    <i data-lucide="check" class="w-4 h-4 text-brand-cyan mt-1 shrink-0"></i>
+                    <span class="text-text-secondary">عرض الرصيد المتبقي بالجنيه المصري</span>
+                </div>
+                <div class="flex items-start gap-2">
+                    <i data-lucide="check" class="w-4 h-4 text-brand-cyan mt-1 shrink-0"></i>
+                    <span class="text-text-secondary">إشعارات فورية عند نفاد الرصيد</span>
+                </div>
+                <div class="flex items-start gap-2">
+                    <i data-lucide="check" class="w-4 h-4 text-brand-cyan mt-1 shrink-0"></i>
+                    <span class="text-text-secondary">حساب التكلفة حسب شرائح التعرفة المصرية</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="section-divider max-w-4xl mx-auto"></div>
+
+<!-- ==================== SLIDE 7: TARIFF ==================== -->
+<section class="min-h-screen flex items-center justify-center relative px-6 py-24" data-slide="7">
+    <span class="slide-number">08 / 12</span>
+    <div class="max-w-5xl w-full">
+        <div class="reveal mb-16 text-center">
+            <span class="text-brand-gold text-sm font-semibold uppercase tracking-widest">التعرفة الكهربائية</span>
+            <h2 class="font-sora text-4xl md:text-5xl font-bold mt-3">Electricity Tariff — Egypt</h2>
+            <p class="text-text-secondary mt-3">سعر الكيلووات ساعة حسب الشرائح (جنيه مصري)</p>
+        </div>
+
+        <div class="reveal reveal-delay-1 bg-card rounded-2xl border border-white/5 overflow-hidden">
+            <table class="data-table" id="tariffTable">
+                <thead>
+                    <tr>
+                        <th>الشريحة (كيلووات/شهر)</th>
+                        <th>السعر (جنيه/كيلووات)</th>
+                        <th class="hidden md:table-cell">مستوى الاستهلاك</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="font-medium text-white">0 – 50</td>
+                        <td class="text-brand-cyan font-semibold">0.48 ج.م</td>
+                        <td class="hidden md:table-cell"><div class="tier-bar bg-green-400" style="width: 5%"></div></td>
+                    </tr>
+                    <tr>
+                        <td class="font-medium text-white">51 – 100</td>
+                        <td class="text-brand-cyan font-semibold">0.58 ج.م</td>
+                        <td class="hidden md:table-cell"><div class="tier-bar bg-green-300" style="width: 10%"></div></td>
+                    </tr>
+                    <tr>
+                        <td class="font-medium text-white">101 – 200</td>
+                        <td class="text-brand-cyan font-semibold">0.77 ج.م</td>
+                        <td class="hidden md:table-cell"><div class="tier-bar bg-yellow-400" style="width: 20%"></div></td>
+                    </tr>
+                    <tr>
+                        <td class="font-medium text-white">201 – 350</td>
+                        <td class="text-brand-cyan font-semibold">1.07 ج.م</td>
+                        <td class="hidden md:table-cell"><div class="tier-bar bg-orange-400" style="width: 35%"></div></td>
+                    </tr>
+                    <tr>
+                        <td class="font-medium text-white">351 – 650</td>
+                        <td class="text-brand-cyan font-semibold">1.32 ج.م</td>
+                        <td class="hidden md:table-cell"><div class="tier-bar bg-orange-500" style="width: 55%"></div></td>
+                    </tr>
+                    <tr>
+                        <td class="font-medium text-white">651 – 1000</td>
+                        <td class="text-brand-cyan font-semibold">1.40 ج.م</td>
+                        <td class="hidden md:table-cell"><div class="tier-bar bg-red-400" style="width: 75%"></div></td>
+                    </tr>
+                    <tr>
+                        <td class="font-medium text-white">أكثر من 1000</td>
+                        <td class="text-red-400 font-semibold">1.50 ج.م</td>
+                        <td class="hidden md:table-cell"><div class="tier-bar bg-red-500" style="width: 95%"></div></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<div class="section-divider max-w-4xl mx-auto"></div>
+
+<!-- ==================== SLIDE 8: NOTIFICATIONS ==================== -->
+<section class="min-h-screen flex items-center justify-center relative px-6 py-24" data-slide="8">
+    <span class="slide-number">09 / 12</span>
+    <div class="max-w-5xl w-full">
+        <div class="reveal mb-16 text-center">
+            <span class="text-red-400 text-sm font-semibold uppercase tracking-widest">نظام الإنذار</span>
+            <h2 class="font-sora text-4xl md:text-5xl font-bold mt-3">Credit Depletion Alerts</h2>
+            <p class="text-text-secondary mt-3">نظام إشعارات ذكي عند نفاد الرصيد</p>
+        </div>
+
+        <div class="space-y-5">
+            <div class="reveal reveal-delay-1 card-hover bg-card rounded-2xl p-6 flex items-start gap-5 group" style="border-right: 3px solid #FFC800;">
+                <div class="w-12 h-12 shrink-0 rounded-xl bg-yellow-500/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                    <i data-lucide="alert-triangle" class="w-6 h-6 text-yellow-400"></i>
+                </div>
+                <div>
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="px-2 py-0.5 rounded text-xs font-bold bg-yellow-500/20 text-yellow-400">تحذير</span>
+                        <h3 class="font-bold text-white">الرصيد أقل من 20%</h3>
+                    </div>
+                    <p class="text-text-secondary text-sm">إرسال إشعار تحذيري: "الرصيد على وشك النفاد، يرجى إعادة الشحن"</p>
+                </div>
+            </div>
+
+            <div class="reveal reveal-delay-2 card-hover bg-card rounded-2xl p-6 flex items-start gap-5 group" style="border-right: 3px solid #F97316;">
+                <div class="w-12 h-12 shrink-0 rounded-xl bg-orange-500/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                    <i data-lucide="alert-octagon" class="w-6 h-6 text-orange-400"></i>
+                </div>
+                <div>
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="px-2 py-0.5 rounded text-xs font-bold bg-orange-500/20 text-orange-400">عاجل</span>
+                        <h3 class="font-bold text-white">أقل من حد الشريحة الدنيا</h3>
+                    </div>
+                    <p class="text-text-secondary text-sm">إشعار عاجل مع خيار فصل الأحمال غير الأساسية تلقائياً</p>
+                </div>
+            </div>
+
+            <div class="reveal reveal-delay-3 card-hover bg-card rounded-2xl p-6 flex items-start gap-5 group" style="border-right: 3px solid #EF4444;">
+                <div class="w-12 h-12 shrink-0 rounded-xl bg-red-500/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                    <i data-lucide="x-circle" class="w-6 h-6 text-red-400 pulse-slow"></i>
+                </div>
+                <div>
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="px-2 py-0.5 rounded text-xs font-bold bg-red-500/20 text-red-400">حرج</span>
+                        <h3 class="font-bold text-white">نفاد الرصيد بالكامل</h3>
+                    </div>
+                    <p class="text-text-secondary text-sm">إشعار فوري + رسالة SMS اختيارية لصاحب المنزل</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="section-divider max-w-4xl mx-auto"></div>
+
+<!-- ==================== SLIDE 9: EXTERNAL APPS ==================== -->
+<section class="min-h-screen flex items-center justify-center relative px-6 py-24" data-slide="9">
+    <span class="slide-number">10 / 12</span>
+    <div class="max-w-6xl w-full">
+        <div class="reveal mb-16 text-center">
+            <span class="text-brand-cyan text-sm font-semibold uppercase tracking-widest">التطبيقات المقترحة</span>
+            <h2 class="font-sora text-4xl md:text-5xl font-bold mt-3">External Integrations</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="reveal reveal-delay-1 card-hover bg-card rounded-2xl p-8 text-center group relative overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-b from-blue-500/5 to-transparent"></div>
+                <div class="relative z-10">
+                    <div class="w-16 h-16 rounded-2xl bg-blue-500/10 flex items-center justify-center mx-auto mb-5 group-hover:scale-110 transition-transform duration-500">
+                        <i data-lucide="send" class="w-8 h-8 text-blue-400"></i>
+                    </div>
+                    <h3 class="font-bold text-white text-xl mb-3">Telegram Bot</h3>
+                    <p class="text-text-secondary text-sm leading-relaxed">عرض الاستهلاك والرصيد، إرسال إشعارات فورية، الاستعلام عن الرصيد بأوامر نصية</p>
+                </div>
+            </div>
+
+            <div class="reveal reveal-delay-2 card-hover bg-card rounded-2xl p-8 text-center group relative overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-b from-orange-500/5 to-transparent"></div>
+                <div class="relative z-10">
+                    <div class="w-16 h-16 rounded-2xl bg-orange-500/10 flex items-center justify-center mx-auto mb-5 group-hover:scale-110 transition-transform duration-500">
+                        <i data-lucide="database" class="w-8 h-8 text-orange-400"></i>
+                    </div>
+                    <h3 class="font-bold text-white text-xl mb-3">Firebase + Custom App</h3>
+                    <p class="text-text-secondary text-sm leading-relaxed">قاعدة بيانات سحابية مع تطبيق Android/iOS يعرض الرسوم البيانية والرصيد والإشعارات</p>
+                </div>
+            </div>
+
+            <div class="reveal reveal-delay-3 card-hover bg-card rounded-2xl p-8 text-center group relative overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-b from-green-500/5 to-transparent"></div>
+                <div class="relative z-10">
+                    <div class="w-16 h-16 rounded-2xl bg-green-500/10 flex items-center justify-center mx-auto mb-5 group-hover:scale-110 transition-transform duration-500">
+                        <i data-lucide="layout-dashboard" class="w-8 h-8 text-green-400"></i>
+                    </div>
+                    <h3 class="font-bold text-white text-xl mb-3">Blynk IoT</h3>
+                    <p class="text-text-secondary text-sm leading-relaxed">منصة جاهزة مع واجهة مستخدم وإعداد سهل للإشعارات</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="reveal reveal-delay-4 mt-6">
+            <div class="card-hover bg-card rounded-2xl p-6 flex items-center gap-5 group" style="border-right: 3px solid #25D366;">
+                <div class="w-12 h-12 shrink-0 rounded-xl bg-green-600/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                    <i data-lucide="message-circle" class="w-6 h-6 text-green-500"></i>
+                </div>
+                <div>
+                    <h3 class="font-bold text-white text-lg">WhatsApp API</h3>
+                    <p class="text-text-secondary text-sm">إرسال التقارير والإشعارات مباشرة عبر واتساب</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="section-divider max-w-4xl mx-auto"></div>
+
+<!-- ==================== SLIDE 10: FUTURE ==================== -->
+<section class="min-h-screen flex items-center justify-center relative px-6 py-24" data-slide="10">
+    <span class="slide-number">11 / 12</span>
+    <div class="max-w-5xl w-full">
+        <div class="reveal mb-16 text-center">
+            <span class="text-brand-blue text-sm font-semibold uppercase tracking-widest">التطوير المستقبلي</span>
+            <h2 class="font-sora text-4xl md:text-6xl font-bold mt-3">Future Development</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="reveal reveal-delay-1 flex items-start gap-4 p-5 rounded-xl hover:bg-white/[0.02] transition-colors group">
+                <div class="w-8 h-8 shrink-0 rounded-lg bg-brand-blue/10 flex items-center justify-center mt-0.5">
+                    <i data-lucide="bell" class="w-4 h-4 text-brand-blue"></i>
+                </div>
+                <p class="text-text-secondary text-sm leading-relaxed group-hover:text-white transition-colors">إضافة تنبيهات عند زيادة الاستهلاك عبر إشعارات فورية على الجوال</p>
+            </div>
+
+            <div class="reveal reveal-delay-2 flex items-start gap-4 p-5 rounded-xl hover:bg-white/[0.02] transition-colors group">
+                <div class="w-8 h-8 shrink-0 rounded-lg bg-brand-cyan/10 flex items-center justify-center mt-0.5">
+                    <i data-lucide="credit-card" class="w-4 h-4 text-brand-cyan"></i>
+                </div>
+                <p class="text-text-secondary text-sm leading-relaxed group-hover:text-white transition-colors">التكامل مع تطبيقات خارجية لإدارة الرصيد مع إمكانية الشحن عن بُعد</p>
+            </div>
+
+            <div class="reveal reveal-delay-3 flex items-start gap-4 p-5 rounded-xl hover:bg-white/[0.02] transition-colors group">
+                <div class="w-8 h-8 shrink-0 rounded-lg bg-red-500/10 flex items-center justify-center mt-0.5">
+                    <i data-lucide="battery-low" class="w-4 h-4 text-red-400"></i>
+                </div>
+                <p class="text-text-secondary text-sm leading-relaxed group-hover:text-white transition-colors">إرسال إشعارات عند نفاد رصيد البطاقة المسبقة الدفع في الأوقات الحرجة</p>
+            </div>
+
+            <div class="reveal reveal-delay-4 flex items-start gap-4 p-5 rounded-xl hover:bg-white/[0.02] transition-colors group">
+                <div class="w-8 h-8 shrink-0 rounded-lg bg-brand-gold/10 flex items-center justify-center mt-0.5">
+                    <i data-lucide="calculator" class="w-4 h-4 text-brand-gold"></i>
+                </div>
+                <p class="text-text-secondary text-sm leading-relaxed group-hover:text-white transition-colors">حساب الاستهلاك بالجنيه المصري بناءً على سعر kWh حسب شرائح التعرفة</p>
+            </div>
+
+            <div class="reveal reveal-delay-5 flex items-start gap-4 p-5 rounded-xl hover:bg-white/[0.02] transition-colors group">
+                <div class="w-8 h-8 shrink-0 rounded-lg bg-yellow-500/10 flex items-center justify-center mt-0.5">
+                    <i data-lucide="sun" class="w-4 h-4 text-yellow-400"></i>
+                </div>
+                <p class="text-text-secondary text-sm leading-relaxed group-hover:text-white transition-colors">دعم التكامل مع الطاقة الشمسية لتتبع الإنتاج والاستهلاك</p>
+            </div>
+
+            <div class="reveal reveal-delay-6 flex items-start gap-4 p-5 rounded-xl hover:bg-white/[0.02] transition-colors group">
+                <div class="w-8 h-8 shrink-0 rounded-lg bg-purple-500/10 flex items-center justify-center mt-0.5">
+                    <i data-lucide="brain" class="w-4 h-4 text-purple-400"></i>
+                </div>
+                <p class="text-text-secondary text-sm leading-relaxed group-hover:text-white transition-colors">تحليل ذكي للاستهلاك مع اقتراحات بالذكاء الاصطناعي لتقليل الفواتير</p>
+            </div>
+
+            <div class="reveal reveal-delay-7 flex items-start gap-4 p-5 rounded-xl hover:bg-white/[0.02] transition-colors group md:col-span-2">
+                <div class="w-8 h-8 shrink-0 rounded-lg bg-green-500/10 flex items-center justify-center mt-0.5">
+                    <i data-lucide="toggle-right" class="w-4 h-4 text-green-400"></i>
+                </div>
+                <p class="text-text-secondary text-sm leading-relaxed group-hover:text-white transition-colors">تحكم عن بُعد لفصل الأجهزة تلقائياً عند تجاوز الاستهلاك للحدود المسموحة</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="section-divider max-w-4xl mx-auto"></div>
+
+<!-- ==================== SLIDE 11: THANK YOU ==================== -->
+<section class="min-h-screen flex items-center justify-center relative overflow-hidden" data-slide="11">
+    <div class="grid-pattern absolute inset-0 z-0"></div>
+    <div class="hero-glow z-0" style="background: radial-gradient(circle, rgba(0,229,255,0.1) 0%, rgba(0,145,255,0.05) 40%, transparent 70%);"></div>
+    <span class="slide-number">12 / 12</span>
+
+    <div class="relative z-10 text-center px-6 max-w-4xl">
+        <div class="reveal reveal-delay-1 mb-8">
+            <div class="w-20 h-20 rounded-3xl bg-brand-blue/10 flex items-center justify-center mx-auto" style="box-shadow: 0 0 40px rgba(0,145,255,0.2);">
+                <i data-lucide="eye" class="w-10 h-10 text-brand-cyan"></i>
+            </div>
+        </div>
+
+        <h2 class="reveal reveal-delay-2 font-sora text-5xl md:text-7xl font-bold mb-4">
+            <span class="shimmer-text">شكراً لكم</span>
+        </h2>
+        <p class="reveal reveal-delay-3 text-2xl text-text-secondary font-light mb-8">Electric Eye by Pyramids Tech</p>
+
+        <div class="reveal reveal-delay-4 flex items-center justify-center gap-6 flex-wrap text-text-dim text-sm">
+            <span class="flex items-center gap-2">
+                <i data-lucide="mail" class="w-4 h-4"></i>
+                Pyramids Tech
+            </span>
+            <span class="flex items-center gap-2">
+                <i data-lucide="calendar" class="w-4 h-4"></i>
+                2025
+            </span>
+        </div>
+
+        <div class="reveal reveal-delay-5 mt-16">
+            <button onclick="window.scrollTo({top:0, behavior:'smooth'})" class="group inline-flex items-center gap-2 px-6 py-3 rounded-full border border-white/10 text-text-dim text-sm hover:border-brand-blue/30 hover:text-brand-blue transition-all duration-300">
+                <i data-lucide="arrow-up" class="w-4 h-4 group-hover:-translate-y-1 transition-transform"></i>
+                العودة للأعلى
+            </button>
+        </div>
+    </div>
+</section>
+
+
+<script src="main.js"></script>
+</body>
+</html>
